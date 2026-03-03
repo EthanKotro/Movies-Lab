@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.movieslab;
 
 import android.os.Bundle;
 
@@ -7,16 +7,14 @@ import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.myapplication.databinding.ActivityMainBinding;
+import com.example.movieslab.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-
-    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
